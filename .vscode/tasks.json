@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+
+    // a task runner that calls the TS compiler (tsc) and compiles
+    "version": "0.1.0",
+
+    // the command is tsc. Install tsc: mpn install -g typescript
+    "command": "tsc",
+
+    // the command is a shell script 
+    "isShellCommand": true,
+
+    // args is the start program to compiles
+    "args": ["-p", "."],
+
+    // show the output window only if unrecognized error occur
+    "showOutput": "silent",
+
+    // tsc martcher to fin compile issues in the output
+    "problemMatcher": "$tsc"
+}
